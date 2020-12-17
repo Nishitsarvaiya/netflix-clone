@@ -1,7 +1,7 @@
 import React from "react";
 import { Footer } from "../components";
 
-export default function FooterContainer() {
+export function FooterContainer() {
     return (
         <Footer>
             <Footer.Top>Questions? Call 000-000-000-0000</Footer.Top>

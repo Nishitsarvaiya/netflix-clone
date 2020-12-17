@@ -17,13 +17,13 @@ export const Inner = styled.div`
     margin: auto;
     width: 100%;
 
-    @media (max-width: 1000px) {
+    @media only screen and (max-width: 949px) {
         flex-direction: column;
     }
 `;
 
 export const Container = styled.div`
-    @media (max-width: 1000px) {
+    @media only screen and (max-width: 949px) {
         ${Item}:last-of-type h2 {
             margin-bottom: 50px;
         }
@@ -33,7 +33,7 @@ export const Container = styled.div`
 export const Pane = styled.div`
     width: 50%;
 
-    @media (max-width: 1000px) {
+    @media only screen and (max-width: 949px) {
         width: 100%;
         padding: 0 45px;
         text-align: center;
@@ -43,10 +43,17 @@ export const Pane = styled.div`
 export const Title = styled.h1`
     font-size: 3.125rem;
     line-height: 1.1;
-    margin-bottom: 0.5rem;
+    margin: 0 0 0.5rem;
+    color: #ffffff;
 
-    @media (max-width: 1000px) {
-        font-size: 2.125rem;
+    @media only screen and (max-width: 549px) and (min-width: 400px),
+        only screen and (max-width: 399px) and (min-width: 350px),
+        only screen and (max-width: 349px) {
+        font-size: 1.625rem;
+    }
+
+    @media only screen and (max-width: 949px) and (min-width: 550px) {
+        font-size: 2.5rem;
     }
 `;
 
@@ -54,8 +61,14 @@ export const SubTitle = styled.h2`
     font-size: 1.625rem;
     font-weight: 400;
 
-    @media (max-width: 1000px) {
-        font-size: 1rem;
+    @media only screen and (max-width: 549px) and (min-width: 400px),
+        only screen and (max-width: 399px) and (min-width: 350px),
+        only screen and (max-width: 349px) {
+        font-size: 1.125rem;
+    }
+
+    @media only screen and (max-width: 949px) and (min-width: 550px) {
+        font-size: 1.25rem;
     }
 `;
 

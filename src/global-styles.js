@@ -6,11 +6,15 @@ export const GlobalStyles = createGlobalStyle`
         padding: 0;
     }
     html, body {
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-family: 'Merriweather Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         background: #000000;
         color: #333333;
         font-size: 16px;
+    }
+
+    h3, p, button {
+        font-family: 'Rubik';
     }
 `;
