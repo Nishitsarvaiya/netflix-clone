@@ -14,7 +14,7 @@ export const GlobalStyles = createGlobalStyle`
         font-size: 16px;
     }
 
-    h3, p, button {
+    h2, h3, p, button, a {
         font-family: 'Rubik';
     }
 `;
